@@ -1,4 +1,4 @@
-# 🚀 Jetson YOLOv8 RTSP Object Detection with Alerts
+# Jetson YOLOv8 RTSP Object Detection with Alerts
 
 A **real-time Jetson-optimized object detection and alert system** built with **YOLOv8**.  
 It connects to **RTSP camera feeds**, performs **real-time inference** using the Jetson’s **GPU (CUDA)**, and generates **alerts with snapshots and logs** when specific objects are detected.
@@ -52,7 +52,7 @@ You can download custom YOLOv8 weights from [Ultralytics Models](https://github.
 ## ⚙️ Installation
 
 ### 1️⃣ Update & install dependencies
-```bash
+
 sudo apt update && sudo apt install python3-pip -y
 pip3 install ultralytics opencv-python torch torchvision numpy
 
@@ -120,7 +120,7 @@ Cleans up threads, camera stream, and logs on exit.
 
 Shows session summary (duration, FPS, total frames, etc).
 
-🧰 Troubleshooting
+## 🧰 Troubleshooting
 Issue	Fix
 RTSP stream not connecting	Check IP, port, credentials; ensure camera is reachable
 Low FPS	Increase SKIP_FRAMES, reduce IMGSZ
